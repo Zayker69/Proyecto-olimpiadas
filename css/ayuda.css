@@ -1,0 +1,196 @@
+* {
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+  background: linear-gradient(to right, #963f30, darkred);
+    padding: 60px;
+    font-size: 15px;
+}
+
+body {
+    font-size:12px;
+    font-family:sans-serif;
+    background: linear-gradient(to right, #943f3f, #ca0a0a);
+  }
+
+  /*--------------------------------------------------------------Menu-----------------------------------------*/
+
+
+  .sideMenu{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 20rem;
+    background-color: darkred;
+    margin-left: -20rem;
+    transition: .5s;
+    text-align:center;
+  }
+  
+  .flecha{
+    top: 40px;
+    position: fixed;
+    transition: .5s;
+    color: #fff;
+    width: 70px;
+  }
+  
+  .sideMenu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10rem;
+  }
+  
+  .sideMenu ul li{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .sideMenu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+  }
+  
+  .sideMenu ul li a:hover {
+    transform: scale(1.2);
+    opacity: .2;
+  }
+  
+  .logo{
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .logo h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    
+  }
+  
+  .txtLogo{
+    display: flex;
+    margin-top: -80px;
+    margin-left: 170px;
+    height: 5rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .txtLogo h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+  }
+  
+  .txtLogo img{
+    rotate: 180deg;
+    margin-left: -20px;
+  }
+  
+
+  /*-------------------------------------------Secciones------------------------------------------------------*/
+
+
+  .flex-cont {
+    display: flex;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .flex-item {
+    border: 1px solid #000;
+    width: 25rem;
+    height: 25rem;
+    background-color: #5f1d11;
+    margin: 3rem;
+    justify-items: center;
+    align-items: center;
+    font-size: medium;
+    box-shadow: 19px 17px 0px -3px rgba(48,0,0,1);
+-webkit-box-shadow: 19px 17px 0px -3px rgba(48,0,0,1);
+-moz-box-shadow: 19px 17px 0px -3px rgb(48, 0, 0);
+  }
+
+  .flex-item h3 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  /*----------------------ayuda----------------------------------------------------*/
+
+  #appBg {
+    height:420px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+#appBg form {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#appBg input[type=textfield]{
+    width: 100%;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17, 16, 16);
+    color: #fff;
+    text-align: right;
+    font-size: 50px;
+    border:0;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+#appBg input[type=button], input[type=reset]{
+    width: 22%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 26px;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#appBg .orange{
+    background-color: rgb(255, 164, 27);
+    color: #fff !important;
+}
+
+#appBg .gray {
+    background-color: #ddd;
+}
+
+
+  

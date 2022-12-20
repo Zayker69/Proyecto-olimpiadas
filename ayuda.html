@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/ayuda.css">
+    <title>Ayuda</title>
+</head>
+<body>
+    <header>
+        <h1>Ayuda</h1>
+        <p>Aquí encontrarás ayuda sobre las distintas secciones de toda la página</p>
+    </header>
+    <img src="img/flecha-2.svg" alt="abrir/cerrar-menu" id='moveArrow' class="flecha" onclick="openMenu()" onmouseover="openMenu()">
+    <div class="sideMenu" id="sideMenu" onmouseleave="closeMenu()">
+      <div class="logo"><h1>TAP</h1></div>
+      <div class="txtLogo"><h1>CALC</h1> <img src="img/rayo-logo_WHITE.svg" alt=""></div>
+      <ul>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="dispositivos.php">Dispositivos</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+        <li><a href="cerrar.php">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+      <div class="flex-cont" onclick="closeMenu()">
+        <div class="flex-item">
+            <h3>Calculadora</h3>
+            <br>
+            <br>
+            Con respecto a la calculadora, lo unico que debes hacer es introducir
+            el consumo en watts de tu aparato, y la cantidad de horas que lo usas,
+            el resultado es el consumo en Kw/H, y cuanto debes pagar al mes por
+            ese uso que le das.
+        </div>
+        <div class="flex-item">
+            <h3>La Etiqueta de Eficiencia</h3>
+            <img src="img/etiqueta.png" alt="etiqueta-eficiencias" style="height: 150px; width:150px;">
+            <br>
+            <br>
+            Los electrodomesticos, hoy en dia incluyen una etiqueta de control
+            de eficiencia, en la que se indica que tan eficente es tu aparato.
+            la clasificación va de la A hasta la G, y de más a menos eficiente
+            respectivamente. Lo más común hoy en día son los dispositivos de 
+            clase A y B, pos estándar de fabricación.
+        </div>
+        <div class="flex-item">
+            <h3>Dispositivos Precargados</h3>
+            <br>            
+            <br>
+            La página de dispositivos precargados ofrece la posibilidad de 
+            visualizar el consumo, y cuanto cuesta por mes, en torno a 
+            un tiempo de uso por mes mínimamente lógico, es decir que 
+            el microondas no va a tener un tiempo de uso de 15hs mensual.
+        </div>
+        <div class="flex-item">
+            <h3>El Proyecto</h3>
+            <br>            
+            <br>
+            El proyecto nació como una idea para ayudar a quienes quieren saber
+            cuanto deberán pagar al mes por usar sus electrodomésticos, o cuánto cunsumen
+            estos mismos. Sea por la razón que sea, además de que por una razón ambiental
+            buscamos dar consciencia del consumo eléctrico en nuestras casas, que aveces puede
+            ser excesivo; Usando el hecho de tener que pagar más como estrategia para que 
+            la gente consuma la electricidad de manera responsable.
+             Es nuestro grano de arena. El proyecto en sí está orientado a la participación 
+            en las olimpíadas de programación como estudiantes, pero va a ir incluído como 
+            un proyecto en nuestros portafolios a la hora de encontrar trabajo.
+        </div>
+        <div class="flex-item">
+            <h3>Inicio/Cuentas</h3>
+            <br>            
+            <br>
+            La finalidad de este apartado es, la futura implementacion de un sistema
+            para subir dispositivos, a una base de datos la cual ya dispone de un espacio
+            para ello, pero no se ha llevado a cabo la implementacion del sistema. Por
+            lo que la funcion de las cuentas, solo es acceder al programa en si.
+        </div>
+      </div>
+      
+    <script>alert('Esta es la pagina de ayuda');</script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>  
+    <script type="text/javascript" src="js/funciones.js"></script>
+</body>
+</html>

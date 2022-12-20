@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/caluladora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+  <img src="img/flecha-2.svg" alt="abrir/cerrar-menu" id='moveArrow' class="flecha" onclick="openMenu()" onmouseover="openMenu()">
+  <div class="sideMenu" id="sideMenu" onmouseleave="closeMenu()">
+    <div class="logo"><h1>TAP</h1></div>
+    <div class="txtLogo"><h1>CALC</h1> <img src="img/rayo-logo_WHITE.svg" alt=""></div>
+    <ul>
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="dispositivos.php">Dispositivos</a></li>
+      <li><a href="calculadora.html">Calculadora</a></li>
+      <li><a href="ayuda.html">Ayuda</a></li>
+      <li><a href="cerrar.php">Cerrar Sesión</a></li>
+    </ul>
+  </div>
+    <form id="formulario" name="frmCalculadora" onclick="closeMenu()">
+        <h1>CALCULADORA DE CONSUMO</h1>
+        <label for="valor1:">Consumo en watts</label>
+        <input type="number" id="valor1" autofocus placeholder="Escribe el consumo" title="consumo-dispositivo">
+        <br>
+        <br>
+        <label for="valor2:">Horas de uso</label>
+        <input type="number" id="valor2" placeholder="Horas de uso" title="horas de uso">
+        <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpiar()">Limpiar Campos</button>
+    </form>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+</html>
